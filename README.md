@@ -47,7 +47,7 @@ The code utilizes several standard Go packages:
 
 ### Architecture
 
-![Web Server Architecture](webserver.png)
+![Web Server Architecture](images/webserver.png)
 
 ### Code Explanation
 
@@ -152,9 +152,6 @@ func main() {
   - Serves static files from the `static` directory using `http.FileServer`.
   - Starts the server to listen on port 8080.
 
-### Conclusion
-
-Understanding each component of the code is crucial for building and maintaining a web server in Go. By breaking down the code into smaller, understandable parts, we gain insights into how the server processes requests, handles form submissions, serves static files, and more. This knowledge forms the foundation for developing more complex web applications in Go.
 ## Step 5: Running the Server
 
 Navigate to your project directory in the terminal and run the following command to start the server:
@@ -165,13 +162,20 @@ go run main.go
 
 You should see the message "Starting Server at port http://localhost:8080" printed in the terminal.
 
+![terminal](images/serverStart.png)
+
 ## Step 6: Testing the Server
 
 1. Open a web browser and navigate to [http://localhost:8080](http://localhost:8080).
 2. You'll land on the index page with a link to the form.
+![homepage](images/homepage.png)
 3. Click the link to go to the form page.
+![formpage](images/formpage.png)
 4. Fill out the form and submit it.
 5. You'll be redirected to the hello page, where you'll see the submitted data displayed.
+![submitpage](images/submitpage.png)
+5. You can also check [http://localhost:8080/hello](http://localhost:8080/hello) to see static data display.
+![hellopage](images/hellopage.png)
 
 ## Conclusion
 
